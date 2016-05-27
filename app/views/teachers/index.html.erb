@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Teachers</h1>
+<h1>Teachers</h1>
 
 <div class="row">
     <% @teachers.each do |teacher| %>
@@ -8,8 +8,8 @@
        <div class="panel panel-default">
         <div class="panel-body">
          <h2><%= teacher.name %></h2>
-         <h3><%= teacher.subject %></h3>
-         <p><%= teacher.yearsexperience %></p>
+         <h3>Subject: <%= teacher.subject %></h3>
+         <p>Years Experience: <%= teacher.yearsexperience %></p>
 
          <div class="btn-group">
           <%= link_to 'Show', teacher, class: "btn btn-primary" %>
